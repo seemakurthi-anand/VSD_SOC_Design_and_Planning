@@ -8,6 +8,10 @@ Description of Openlane ASIC design flow
 Introduction to open-source EDA tools and covering till synthesis
 Section 2:
 Theory about floor planning and also labs associated with it 
-Library Binding and Placement
+Library Binding and Placement also labs associated with it
+Day 2 -> Session 2 -> Labs on Placement (Conjestion aware placement using ReplAce)
+Here, we focus on congestion-based placement, not really bothering about the timing. We try to reduce the congestion. There are two kinds of placement:
+- Global placement
+- Detailed placement
 
 
