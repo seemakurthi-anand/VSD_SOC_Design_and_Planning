@@ -20,6 +20,12 @@ Here, we focus on congestion-based placement, not really bothering about the tim
 
 Commands:
 <img width="1280" height="768" alt="image" src="https://github.com/user-attachments/assets/f1833c50-8b17-4aff-9cbf-bf75cc1b0ada" />
+Completion indication of placement
+<img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/85131ec9-dc10-4247-9de9-d766eefa816d" />
+
+Standard cells arrangement after Placement step
+<img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/9530eb59-1708-4a4e-b4bd-d5cc737e347e" />
+
 
 
 
