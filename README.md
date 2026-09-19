@@ -11,12 +11,12 @@ Theory about floor planning and also labs associated with it
 Library Binding and Placement also labs associated with it
 Day 1 Setup Openlane, Prepare Design and Run Synthesis
 **Exploring various files and pdks**
-<img width="940" height="617" alt="image" src="https://github.com/user-attachments/assets/be60900c-fdfb-4460-9d3e-e7a7ed01b90c" />
+![Exploring pdks]<img width="940" height="617" alt="image" src="https://github.com/user-attachments/assets/be60900c-fdfb-4460-9d3e-e7a7ed01b90c" />
 **Start Openlane and Prepare design **
-<img width="602" height="410" alt="image" src="https://github.com/user-attachments/assets/d52092cf-5fcd-403c-afad-75e87e0e1f81" />
+![OpenLane Terminal]<img width="602" height="410" alt="image" src="https://github.com/user-attachments/assets/d52092cf-5fcd-403c-afad-75e87e0e1f81" />
 **Exploring picorv32a directory and runs directory
 Once Design Prep step is completed, a folder with current date is created in runs directory and a merged.lef is created inside tmf folder of newly created curreent_date directory **
-<img width="602" height="366" alt="image" src="https://github.com/user-attachments/assets/7bbad248-5bce-4b07-b614-37b90c146793" />
+![Runs Directory]<img width="602" height="366" alt="image" src="https://github.com/user-attachments/assets/7bbad248-5bce-4b07-b614-37b90c146793" />
 
 
 
