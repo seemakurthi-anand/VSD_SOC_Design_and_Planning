@@ -11,12 +11,20 @@ Theory about floor planning and also labs associated with it
 Library Binding and Placement also labs associated with it
 Day 1 Setup Openlane, Prepare Design and Run Synthesis
 **Exploring various files and pdks**
-![Exploring pdks]<img width="940" height="617" alt="image" src="https://github.com/user-attachments/assets/be60900c-fdfb-4460-9d3e-e7a7ed01b90c" />
+<img width="940" height="617" alt="image" src="https://github.com/user-attachments/assets/be60900c-fdfb-4460-9d3e-e7a7ed01b90c" />
 **Start Openlane and Prepare design **
-![OpenLane Terminal]<img width="602" height="410" alt="image" src="https://github.com/user-attachments/assets/d52092cf-5fcd-403c-afad-75e87e0e1f81" />
+<img width="602" height="410" alt="image" src="https://github.com/user-attachments/assets/d52092cf-5fcd-403c-afad-75e87e0e1f81" />
 **Exploring picorv32a directory and runs directory
-Once Design Prep step is completed, a folder with current date is created in runs directory and a merged.lef is created inside tmf folder of newly created curreent_date directory **
-![Runs Directory]<img width="602" height="366" alt="image" src="https://github.com/user-attachments/assets/7bbad248-5bce-4b07-b614-37b90c146793" />
+Once Design Prep step is completed, a folder with current date is created in runs directory and a merged.lef is created inside tmf folder of newly created current_date directory **
+<img width="602" height="366" alt="image" src="https://github.com/user-attachments/assets/7bbad248-5bce-4b07-b614-37b90c146793" />
+
+**Synthesis Successful**
+<img width="940" height="571" alt="image" src="https://github.com/user-attachments/assets/c1db6f9f-f56d-4084-bbc1-48335168e527" />
+**Flop ratio:** Number of F/F’s / Number of Cells =1613/14876
+<img width="602" height="374" alt="image" src="https://github.com/user-attachments/assets/c302a2b8-c565-4c63-8923-b9089f080cf4" />
+<img width="602" height="387" alt="image" src="https://github.com/user-attachments/assets/8340bbcf-22a1-49c9-8192-9cb82dddda5d" />
+Floor Planning Successful
+<img width="602" height="362" alt="image" src="https://github.com/user-attachments/assets/71520828-2960-4e75-8126-456659c3eb0a" />
 
 
 
