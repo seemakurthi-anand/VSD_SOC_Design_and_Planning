@@ -56,6 +56,11 @@ Zoomed version showing standard cells after placement step
  <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/c2b00113-d1c8-403e-befe-4c80576f4ef9" />
 
 Day 3 -> Session 1 -> Labs on CMOS Inverter Ngspice Simulations
+Labs for git clone vsdstdcelldesign
+Commands to clone from git and use .mag file
+<img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/76774904-9ed4-429f-b5d0-533bed552a3e" />
+Inverter layout already available
+<img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/a91be289-96df-4705-9380-2aa51068a006" />
 
 
 
