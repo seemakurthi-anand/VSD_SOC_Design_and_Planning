@@ -19,12 +19,14 @@ Once Design Prep step is completed, a folder with current date is created in run
 <img width="602" height="366" alt="image" src="https://github.com/user-attachments/assets/7bbad248-5bce-4b07-b614-37b90c146793" />
 
 **Synthesis Successful**
-<img width="940" height="571" alt="image" src="https://github.com/user-attachments/assets/c1db6f9f-f56d-4084-bbc1-48335168e527" />
+<img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/33d8b284-538c-4127-a976-d87c6670d992" />
+
 **Flop ratio:** Number of F/F’s / Number of Cells =1613/14876
 <img width="602" height="374" alt="image" src="https://github.com/user-attachments/assets/c302a2b8-c565-4c63-8923-b9089f080cf4" />
 <img width="602" height="387" alt="image" src="https://github.com/user-attachments/assets/8340bbcf-22a1-49c9-8192-9cb82dddda5d" />
 Floor Planning Successful
-<img width="602" height="362" alt="image" src="https://github.com/user-attachments/assets/71520828-2960-4e75-8126-456659c3eb0a" />
+<img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/b7cec78d-d87e-42bf-836e-5bc498578ba4" />
+
 
 
 
