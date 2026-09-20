@@ -62,8 +62,41 @@ file:///home/vsduser/Pictures/floorplan/different_io_placer_io_mode2.png<img wid
 Labs for git clone vsdstdcelldesign
 Commands to clone from git and use .mag file
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/76774904-9ed4-429f-b5d0-533bed552a3e" />
-Inverter layout already available
+Inverter layout already available:
+Red line is polysilicon
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/a91be289-96df-4705-9380-2aa51068a006" />
+Check to say it is Inverter
+Check NMOS area in tkcon window
+<img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/bf1997a6-74db-4107-9e54-ae5b850a829b" />
+Check PMOS are in tkcon window
+<img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/97a41a66-df9c-49fc-b8e3-adb9a7d53e23" />
+Check Polysilicon (Gate)
+<img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/9cfb5a9a-ef7e-4a87-8ea6-ed5cd9b7eb8d" />
+Check Pmos drain to Nmos drain collection(by pressing S 3 times at Vout port)
+<img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/8177a13e-1ad0-4414-b8a8-cc01cbb62ed8" />
+
+Check Pmos Source to VDD
+<img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/a198624e-661d-4849-830f-aa4884b29699" />
+
+Check NMOS Source to GNd
+<img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/58504398-7485-4877-baed-aba82ee255b3" />
+
+Sample DRC Error
+<img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/05299365-65cb-4171-9018-7f35d13ffeb4" />
+
+Genration of ext file and spice file from Tkcon
+<img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/d754a253-c2cb-435f-8e16-de8b1f2a5b78" />
+Box dimension
+file:///home/vsduser/Pictures/standardcell/box_ht_width_in_tkcon_window.png<img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/c99f4314-ccc5-4e71-8880-82c7402fe3bd" />
+
+Final spice deck for transient Analysis
+<img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/0d2177d6-3cb6-4fcd-a958-32824475055a" />
+Inverter waveform NGSpice
+<img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/a957a087-21cd-43cb-b22f-cae4794b06aa" />
+
+
+
+
 
 
 
