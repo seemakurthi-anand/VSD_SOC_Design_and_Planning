@@ -56,6 +56,9 @@ Zoomed version showing standard cells after placement step
  <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/c2b00113-d1c8-403e-befe-4c80576f4ef9" />
 
 Day 3 -> Session 1 -> Labs on CMOS Inverter Ngspice Simulations
+IO placer revision, changing IO mode to 2
+file:///home/vsduser/Pictures/floorplan/different_io_placer_io_mode2.png<img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/8f8cf72d-25ef-4611-83ad-9db7b13e6324" />
+
 Labs for git clone vsdstdcelldesign
 Commands to clone from git and use .mag file
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/76774904-9ed4-429f-b5d0-533bed552a3e" />
