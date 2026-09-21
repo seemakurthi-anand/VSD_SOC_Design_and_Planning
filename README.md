@@ -94,6 +94,8 @@ Final spice deck for transient Analysis
 Inverter waveform NGSpice
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/a957a087-21cd-43cb-b22f-cae4794b06aa" />
 
+Input fall Output Rise
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/508d533d-3f19-4661-b70c-40c5c0b19a1d" />
 
 
 
