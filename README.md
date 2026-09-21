@@ -65,7 +65,8 @@ Commands to clone from git and use .mag file
 Inverter layout already available:
 Red line is polysilicon
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/a91be289-96df-4705-9380-2aa51068a006" />
-Check to say it is Inverter
+Day 3 -> Session 2  <br>
+Checks to say it is Inverter
 Check NMOS area in tkcon window
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/bf1997a6-74db-4107-9e54-ae5b850a829b" />
 Check PMOS are in tkcon window
@@ -88,7 +89,7 @@ Genration of ext file and spice file from Tkcon
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/d754a253-c2cb-435f-8e16-de8b1f2a5b78" />
 Box dimension
 file:///home/vsduser/Pictures/standardcell/box_ht_width_in_tkcon_window.png<img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/c99f4314-ccc5-4e71-8880-82c7402fe3bd" />
-
+Day 3 -> Session 3  <br>
 Final spice deck for transient Analysis
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/0d2177d6-3cb6-4fcd-a958-32824475055a" />
 Inverter waveform NGSpice
@@ -106,6 +107,13 @@ Fall time of O/p = 4.095n -4.052 = 0.043n
 O/p rise delay =   2.211n -2.15n = 0.061n  
 <br>
 O/p fall delay =  <br>
+
+Adding missing DRC rules wrt skywater130 <br>
+
+First download magic layout examples
+file:///home/vsduser/Pictures/DRC/DRC_tests.png<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/1379d07f-593a-47d7-9c5b-70061504778a" />
+
+
 
 
 
