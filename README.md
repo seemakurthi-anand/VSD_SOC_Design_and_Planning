@@ -97,11 +97,13 @@ Inverter waveform NGSpice
 Input fall Output Rise
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/508d533d-3f19-4661-b70c-40c5c0b19a1d" />
 
-Rise time = Rise transition time of o/p = 2.245 -2.182=0.063 
+Rise time of O/p = 2.245n -2.182n = 0.063n 
  <br>
-Fall time = <br>
-O/p rise delay =  <br>
-O/p fall delay = <br>
+Fall time of O/p = 4.095n -4.052 = 0.043n  
+ <br>
+O/p rise delay =   2.211n -2.15n = 0.061n  
+<br>
+O/p fall delay =  <br>
 
 
 
