@@ -136,7 +136,7 @@ DNWell
 Nwell DRC Error check
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/f39c4c0a-ef5e-4bd5-b605-4273fcf02299" />
 
-Day 4 -> Session2
+Day 4 -> Session1
 Changing Grid size as per tracks.info file
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/15880065-f38f-4549-80c0-5abb819887de" />
 Width check for PR boundary
@@ -149,6 +149,22 @@ Lef successfully extracted
 
 Lef file with pins and their direction, and also the order in which the description is mentioned 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/937c6e07-c54a-4881-998f-33a6dab2f83e" />
+
+Sample Lib file with Timing and Cell characterization
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/6a8ee19b-312e-4508-a83c-7a4f64cc3bd6" />
+
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/660607da-7b8a-413e-9104-c78168c9f9cd" />
+
+Updated config.tcl file in configs/picorv32a
+
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/ab6a437a-f2a5-4773-8d83-166af621c4be" />
+
+Preparing design
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/de956cb8-76c2-4a84-b723-b75d9ece199c" />
+
+Run Synthesis
+
+Custom Cell shown during run synthesis 
 
 
 
