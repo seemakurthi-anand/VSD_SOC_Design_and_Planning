@@ -9,6 +9,8 @@ Introduction to open-source EDA tools and covering till synthesis
 Section 2:
 Theory about floor planning and also labs associated with it 
 Library Binding and Placement also labs associated with it
+Section 3:
+
 Day 1 Setup Openlane, Prepare Design and Run Synthesis
 **Exploring various files and pdks**
 <img width="940" height="617" alt="image" src="https://github.com/user-attachments/assets/be60900c-fdfb-4460-9d3e-e7a7ed01b90c" />
@@ -129,7 +131,13 @@ Adding rule polyres, poly distance rule
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/13ab1a9e-f2b1-4a08-80cd-f59dec5ae9e6" />
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/9245656d-0f53-4995-94a9-7ef3fa538f63" />
 
-
+DNWell
+<img width="1919" height="916" alt="image" src="https://github.com/user-attachments/assets/8c8ca10e-0abd-474a-885b-4dc7d55bfb2e" />
+Nwell DRC Error check
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/f39c4c0a-ef5e-4bd5-b605-4273fcf02299" />
+Width check for PR boundary
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/ce146b30-534e-4cd1-b46b-87109edcdca0" />
+Height Check for PR boundary
 
 
 
