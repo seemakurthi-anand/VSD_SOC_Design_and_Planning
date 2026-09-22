@@ -135,11 +135,20 @@ DNWell
 <img width="1919" height="916" alt="image" src="https://github.com/user-attachments/assets/8c8ca10e-0abd-474a-885b-4dc7d55bfb2e" />
 Nwell DRC Error check
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/f39c4c0a-ef5e-4bd5-b605-4273fcf02299" />
+
+Day 4 -> Session2
+Changing Grid size as per tracks.info file
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/15880065-f38f-4549-80c0-5abb819887de" />
 Width check for PR boundary
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/ce146b30-534e-4cd1-b46b-87109edcdca0" />
 Height Check for PR boundary
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/5c746c2e-ec1f-41f3-ab36-723ad67a984a" />
 
+Lef successfully extracted
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/f0c6d0b1-5df4-4a48-a7b3-4027a3226f0f" />
 
+Lef file with pins and their direction, and also the order in which the description is mentioned 
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/937c6e07-c54a-4881-998f-33a6dab2f83e" />
 
 
 
