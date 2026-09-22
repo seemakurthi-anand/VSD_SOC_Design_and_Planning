@@ -166,6 +166,12 @@ Run Synthesis
 
 Custom Cell shown during run synthesis 
 
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/fb65e293-7d84-409c-b461-ce3a85d2aee3" />
+
+Synthesis Successful but huge Negative Slack
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/7a8998e7-129c-4369-9710-fd9627291f8d" />
+
+
 
 
 
