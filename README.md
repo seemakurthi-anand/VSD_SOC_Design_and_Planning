@@ -113,6 +113,23 @@ Adding missing DRC rules wrt skywater130 <br>
 First download magic layout examples
 file:///home/vsduser/Pictures/DRC/DRC_tests.png<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/1379d07f-593a-47d7-9c5b-70061504778a" />
 
+DRC not catching errors
+
+Adding rule polyres, poly distance rule
+
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/1b05c432-bb13-462f-b4e2-da693b80e6b7" />
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/f5648ed5-87af-4a18-819c-c0f8a81dc67f" />
+
+
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/58ad639f-58e5-4dc9-9ff9-a060ab3de1d3" />
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/ff84b746-6985-4cac-90fd-70965400796b" />
+
+
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/13ab1a9e-f2b1-4a08-80cd-f59dec5ae9e6" />
+
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/9245656d-0f53-4995-94a9-7ef3fa538f63" />
+
+
 
 
 
