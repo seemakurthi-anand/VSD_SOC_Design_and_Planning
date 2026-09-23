@@ -173,6 +173,9 @@ Synthesis Successful but huge Negative Slack
 Area before Synth_strategy changed
 <img width="1846" height="174" alt="image" src="https://github.com/user-attachments/assets/65670cd3-9010-4502-a28c-78ede681a9cc" />
 
+Readme info of SYNTH_STRATEGY from openlane/configuration  
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/53193c76-7d61-4740-a480-31506cb5c3cf" />
+
 Commands to view and change synthesis parameters
 <img width="1852" height="253" alt="image" src="https://github.com/user-attachments/assets/b8f991a7-b9a1-4576-844c-f4dcdcaf73d0" />
 
@@ -195,12 +198,16 @@ Magic layout after placement
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/2d920551-913c-45cc-ba1d-0343a2ab97f2" />
 Magic layout highlighting with custom cell SKY130_VSDINV 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/1e06b534-7678-4e5d-b22f-eb740f208ac1" />
-
+Extend View (by typing extend in tkcon window) <br>
 We can also see abutment(intersection with others) where power and gnd rails are shared between the cells
-
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/23b5f201-f962-45b8-9950-9402271e2df7" />
 
-
+Optimizing the worst-case slack.<br>
+To use OpenSTA, we need to create two more files and work on it. 
+1) pre_sta.conf created in openlane/ directory
+2) my_base.sdc created in designs/picorv32a/src directory
+Open STA results:
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/57529bc4-1744-4785-8245-3b35296d5ae0" />
 
 
 
