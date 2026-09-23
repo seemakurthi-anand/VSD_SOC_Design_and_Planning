@@ -170,6 +170,15 @@ Custom Cell shown during run synthesis
 
 Synthesis Successful but huge Negative Slack
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/7a8998e7-129c-4369-9710-fd9627291f8d" />
+Area before Synth_strategy changed
+<img width="1846" height="174" alt="image" src="https://github.com/user-attachments/assets/65670cd3-9010-4502-a28c-78ede681a9cc" />
+
+Commands to view and change synthesis parameters
+<img width="1852" height="253" alt="image" src="https://github.com/user-attachments/assets/b8f991a7-b9a1-4576-844c-f4dcdcaf73d0" />
+
+
+Area after Synth_strategy changed
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/7c6b3693-2339-4140-905e-6d54a978e03f" />
 
 
 
