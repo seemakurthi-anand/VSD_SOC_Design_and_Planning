@@ -194,9 +194,11 @@ Placement Done
 Magic layout after placement
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/2d920551-913c-45cc-ba1d-0343a2ab97f2" />
 Magic layout highlighting with custom cell SKY130_VSDINV 
-<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/7c99dbb7-a769-4066-a23d-89e9e3c34808" />
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/1e06b534-7678-4e5d-b22f-eb740f208ac1" />
+
 We can also see abutment(intersection with others) where power and gnd rails are shared between the cells
 
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/23b5f201-f962-45b8-9950-9402271e2df7" />
 
 
 
