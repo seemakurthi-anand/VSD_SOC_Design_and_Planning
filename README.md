@@ -188,6 +188,14 @@ Sequence of steps run to resolve floor plan errors
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/43d40a0f-5e43-467e-8a06-b3a14d0446c0" />
 <img width="1854" height="491" alt="image" src="https://github.com/user-attachments/assets/ebf9c25b-aeea-46c3-ace7-0a66b0ba79ac" />
 
+Placement Done
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/7f162e03-116b-43cb-9edc-77a32b277ec3" />
+
+Magic layout after placement
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/2d920551-913c-45cc-ba1d-0343a2ab97f2" />
+Magic layout highlighting with custom cell SKY130_VSDINV 
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/7c99dbb7-a769-4066-a23d-89e9e3c34808" />
+We can also see abutment(intersection with others) where power and gnd rails are shared between the cells
 
 
 
