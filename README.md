@@ -184,6 +184,9 @@ Automatic updation of merged.lef inside runs/date_folder/tmp ensuring no problem
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/02631c66-2850-4e03-87da-5b6dbde086bb" />
 Unexpected error encountered during run_flowplan
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/63ad0bfa-e067-4c69-aa43-9afa3ea49e13" />
+Sequence of steps run to resolve floor plan errors
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/43d40a0f-5e43-467e-8a06-b3a14d0446c0" />
+<img width="1854" height="491" alt="image" src="https://github.com/user-attachments/assets/ebf9c25b-aeea-46c3-ace7-0a66b0ba79ac" />
 
 
 
