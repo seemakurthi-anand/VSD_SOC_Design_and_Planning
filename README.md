@@ -208,10 +208,29 @@ To use OpenSTA, we need to create two more files and work on it.
 2) my_base.sdc created in designs/picorv32a/src directory <br>
 Open STA results:
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/57529bc4-1744-4785-8245-3b35296d5ae0" />
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/0f152834-0bd8-4514-a7c8-55f08a2cb857" />
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/d283ca5e-3a89-4372-922e-1974beba8040" />
+<img width="1855" height="304" alt="image" src="https://github.com/user-attachments/assets/48eb0186-3a45-4236-82e7-48884866f9b5" />
+
 Limiting the fan-out to improve the slack
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/13d1fc1f-67d5-4300-adad-2a8ea06df3fe" />
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/0596e58d-ecd5-42db-97ce-b35451bb2700" />
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/9c1168fd-1d41-40c4-a309-dd87c5560fb4" />
+
+This OR gate which is of small size has many fanouts
 
 
+Changing Drive strength for Gates with High Fanout <br?
+The following are various commands to check the driver and fanouts of a net and replace with larger cell and generate reports with 4 bit precision in displayed values
+<img width="1853" height="282" alt="image" src="https://github.com/user-attachments/assets/9420f2ec-a2d9-40a1-bab2-b4bac1d44690" />
 
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/1015e468-843f-44d3-a878-574e4789bf8c" />
+
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/9ca84d6e-4a85-4761-81d2-27700b7d7cad" />
+
+Finally slack changed from -23.9 to -22.6173
+Instances of _14506_ gate that caused more impact 
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/bc92d6d9-a500-4f8c-a416-68d70ef1e299" />
 
 
 
