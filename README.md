@@ -205,9 +205,11 @@ We can also see abutment(intersection with others) where power and gnd rails are
 Optimizing the worst-case slack.<br>
 To use OpenSTA, we need to create two more files and work on it. 
 1) pre_sta.conf created in openlane/ directory
-2) my_base.sdc created in designs/picorv32a/src directory
+2) my_base.sdc created in designs/picorv32a/src directory <br>
 Open STA results:
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/57529bc4-1744-4785-8245-3b35296d5ae0" />
+Limiting the fan-out to improve the slack
+
 
 
 
