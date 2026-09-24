@@ -232,6 +232,25 @@ Finally slack changed from -23.9 to -22.6173
 Instances of _14506_ gate that caused more impact 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/bc92d6d9-a500-4f8c-a416-68d70ef1e299" />
 
+Continuing the preious design of 0ns slack <br>
+Synthesis
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/d0bdff61-fbde-480b-ab5f-b2f63944c2e7" />
+
+Floor plan
+<img width="1857" height="348" alt="image" src="https://github.com/user-attachments/assets/63ba97a0-9c5f-4d24-8642-8a0634929042" />
+<img width="1859" height="414" alt="image" src="https://github.com/user-attachments/assets/f1159e5d-050d-4242-8ae3-787a76025da5" />
+<img width="1855" height="512" alt="image" src="https://github.com/user-attachments/assets/c0e319ad-a501-418f-8551-89bf1ee51945" />
+Placement
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/fd1c5829-5446-4ad6-a19f-25557771cc52" />
+CTS
+<img width="1862" height="463" alt="image" src="https://github.com/user-attachments/assets/7fd43bd7-e8d5-4d33-b912-c2b3a2391edc" />
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/2edf5197-3af2-4eae-b9fc-5bcbcd0ab40e" />
+Openroad
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/6173d8ed-c2e2-42fb-826c-634186c42baa" />
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/97d167c6-d503-4324-9dfc-5cb168d39ebd" />
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/9107f17e-a3e6-44e6-ae2f-d1499ed6efc8" />
+<img width="1856" height="185" alt="image" src="https://github.com/user-attachments/assets/4eade255-e051-4e5b-bc37-c48c152e9db6" />
+
 
 
 
