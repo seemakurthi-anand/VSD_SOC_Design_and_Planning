@@ -13,7 +13,8 @@ Section 3:
 
 Day 1 Setup Openlane, Prepare Design and Run Synthesis
 Exploring various files and pdks
-<img width="940" height="617" alt="image" src="https://github.com/user-attachments/assets/be60900c-fdfb-4460-9d3e-e7a7ed01b90c" /> 
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/cc45773e-cf6e-40f0-aa46-94d02c2b6361" />
+
 Start Openlane and Prepare design 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/d5c59e13-5328-4363-91a5-0824706079e2" />
 Prep design Completed
@@ -25,7 +26,7 @@ Once Design Prep step is completed, a folder with current date is created in run
 <img width="602" height="366" alt="image" src="https://github.com/user-attachments/assets/7bbad248-5bce-4b07-b614-37b90c146793" />
 
 Synthesis Successful
-<img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/33d8b284-538c-4127-a976-d87c6670d992" />
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/70875ecc-5873-4ce8-9ca9-78f989c7d111" />
 
 
 **Flop ratio:** Number of F/F’s / Number of Cells =1613/14876
