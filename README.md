@@ -21,28 +21,24 @@ Prep design Completed
 
 
 Exploring picorv32a directory and runs directory <br>
-Once Design Prep step is completed, a folder with current date is created in runs directory and a merged.lef is created inside tmf folder of newly created current_date directory **
+Once Design Prep step is completed, a folder with current date is created in runs directory and a merged.lef is created inside tmf folder of newly created current_date directory
 <img width="602" height="366" alt="image" src="https://github.com/user-attachments/assets/7bbad248-5bce-4b07-b614-37b90c146793" />
 
-**Synthesis Successful**
+Synthesis Successful
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/33d8b284-538c-4127-a976-d87c6670d992" />
 
 
 **Flop ratio:** Number of F/F’s / Number of Cells =1613/14876
-<img width="602" height="374" alt="image" src="https://github.com/user-attachments/assets/c302a2b8-c565-4c63-8923-b9089f080cf4" />
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/f516c7f9-8f77-473f-80fd-a8ea3712d0a4" />
 
-<img width="602" height="387" alt="image" src="https://github.com/user-attachments/assets/8340bbcf-22a1-49c9-8192-9cb82dddda5d" />
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/8891e449-6bc2-4bf2-90c8-155c4bd78a6f" />
 
 Floor Planning Successful
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/b7cec78d-d87e-42bf-836e-5bc498578ba4" />
 
 
-
-
-Day 2 -> Session 1 -> Labs on Floor Planning
-**Before Placement the standard cells positions not fixed yet**
+Day 2 -> Session 1 -> Labs on Floor Planning <br>
+Before Placement the standard cells positions not fixed yet
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/7ae2e053-0c34-4702-8043-ad1ebc218dbf" />
 
 Day 2 -> Session 2 -> Labs on Placement (Conjestion aware placement using ReplAce)
@@ -229,7 +225,7 @@ Limiting the fan-out to improve the slack
 This OR gate which is of small size has many fanouts
 
 
-Changing Drive strength for Gates with High Fanout <br?
+Changing Drive strength for Gates with High Fanout <br>
 The following are various commands to check the driver and fanouts of a net and replace with larger cell and generate reports with 4 bit precision in displayed values
 <img width="1853" height="282" alt="image" src="https://github.com/user-attachments/assets/9420f2ec-a2d9-40a1-bab2-b4bac1d44690" />
 
@@ -241,7 +237,7 @@ Finally slack changed from -23.9 to -22.6173
 Instances of _14506_ gate that caused more impact 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/bc92d6d9-a500-4f8c-a416-68d70ef1e299" />
 
-Continuing the preVious design of 0ns slack <br>
+Continuing the previous design of 0ns slack <br>
 Synthesis
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/d0bdff61-fbde-480b-ab5f-b2f63944c2e7" />
 
