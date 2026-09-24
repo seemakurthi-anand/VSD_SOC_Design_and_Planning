@@ -232,7 +232,7 @@ Finally slack changed from -23.9 to -22.6173
 Instances of _14506_ gate that caused more impact 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/bc92d6d9-a500-4f8c-a416-68d70ef1e299" />
 
-Continuing the preious design of 0ns slack <br>
+Continuing the preVious design of 0ns slack <br>
 Synthesis
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/d0bdff61-fbde-480b-ab5f-b2f63944c2e7" />
 
@@ -262,6 +262,7 @@ Commands run after CTS
 <img width="1854" height="64" alt="image" src="https://github.com/user-attachments/assets/ec966249-dc2a-4f97-ac55-cc0a0faaed69" />
 Report Checks
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/e2f7bc2c-af36-45e8-8a67-9f0fbdc4ac5b" />
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/b8700a3d-7664-401d-9e95-d1720b1171d1" />
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/31ac5c9b-b47d-4e11-9f47-dbc755d510da" />
 Setup and Hold Checks
 <img width="1855" height="401" alt="image" src="https://github.com/user-attachments/assets/fb3d50ec-29de-44ab-9d83-04a6ed2c555c" />
@@ -292,6 +293,10 @@ Zoomed versipn of Magic Layout View
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/fe511c19-f56e-4908-994c-73618225da60" />
 Fsst route Guide inside tmp/routing)
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/1a1e930d-2103-4a87-8997-9c017de90f97" />
+After SPEF reading
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/644f42a8-c047-49d6-8ff2-96e1a2e85bc9" />
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/021f6869-2c28-466a-8d71-1da978c467c9" />
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/347524f2-8580-4d64-a786-7c71cbd65bad" />
 
 
 
