@@ -269,6 +269,31 @@ Reinserting Clk buffer
 <img width="1852" height="154" alt="image" src="https://github.com/user-attachments/assets/262c145f-2acd-41fc-bea9-98d4eb1d9e94" />
 PDN Successful
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/03d93454-3198-46e4-902a-5ed9ef82cc79" />
+Command to open Magi layout view after PDN
+file:///home/vsduser/Pictures/continue_from_0ns_slack/after_clk_buffer1_removal/after_cts_run_again/PDN/command_exec_to_open_pdn_view_of_magic_note_last_one_is_pdn_def<img width="1845" height="134" alt="image" src="https://github.com/user-attachments/assets/530434b6-7617-40b9-b1bb-423bebb04011" />
+
+Magic Layout view after PDN generation
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/9edd9485-f6bf-41b8-ade2-67c2f61ce9f9" />
+Zoomed View
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/e64b885f-3794-4410-a54f-2fd0cc3b03e4" />
+Showing Standard Cells
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/38ea3c13-0fd4-4ea8-b9a3-a2b4c132ae4f" />
+
+Routing <br>
+Routing Successful
+
+Command to open Magic layout view after Routing
+<img width="1859" height="53" alt="image" src="https://github.com/user-attachments/assets/bb063b83-960f-4986-8b12-6b4ce636fd0e" />
+
+Magic Layout view after routing
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/6db17d47-3a93-430b-93a4-e22a215f9537" />
+Zoomed versipn of Magic Layout View
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/588ef9db-6fa8-4e91-b241-dbc62099d2f5" />
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/fe511c19-f56e-4908-994c-73618225da60" />
+Fsst route Guide inside tmp/routing)
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/1a1e930d-2103-4a87-8997-9c017de90f97" />
+
+
 
 
 
