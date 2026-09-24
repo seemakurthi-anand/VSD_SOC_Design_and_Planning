@@ -252,9 +252,23 @@ Openroad
 <img width="1856" height="185" alt="image" src="https://github.com/user-attachments/assets/4eade255-e051-4e5b-bc37-c48c152e9db6" />
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/d75cadf2-d74a-4a6a-838d-e99dd688508c" />
-
-
-
+Commands to remove Clk buffer from list
+<img width="1856" height="185" alt="image" src="https://github.com/user-attachments/assets/c10929a3-b3cb-4a02-802e-a68365a1e02e" />
+Run CTS Again <br>
+CTS Done
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/fdbad0c2-1b23-4583-985e-3501e0db32ef" />
+Commands run after CTS
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/effee9a1-4dc3-46e0-95c9-dd45bc90658b" />
+<img width="1854" height="64" alt="image" src="https://github.com/user-attachments/assets/ec966249-dc2a-4f97-ac55-cc0a0faaed69" />
+Report Checks
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/e2f7bc2c-af36-45e8-8a67-9f0fbdc4ac5b" />
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/31ac5c9b-b47d-4e11-9f47-dbc755d510da" />
+Setup and Hold Checks
+<img width="1855" height="401" alt="image" src="https://github.com/user-attachments/assets/fb3d50ec-29de-44ab-9d83-04a6ed2c555c" />
+Reinserting Clk buffer
+<img width="1852" height="154" alt="image" src="https://github.com/user-attachments/assets/262c145f-2acd-41fc-bea9-98d4eb1d9e94" />
+PDN Successful
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/03d93454-3198-46e4-902a-5ed9ef82cc79" />
 
 
 
