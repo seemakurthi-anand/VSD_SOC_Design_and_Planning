@@ -12,22 +12,20 @@ Library Binding and Placement also labs associated with it
 Section 3:
 
 Day 1 Setup Openlane, Prepare Design and Run Synthesis
-**Exploring various files and pdks**
-<img width="940" height="617" alt="image" src="https://github.com/user-attachments/assets/be60900c-fdfb-4460-9d3e-e7a7ed01b90c" />
-**Start Openlane and Prepare design **
-<img width="602" height="410" alt="image" src="https://github.com/user-attachments/assets/d52092cf-5fcd-403c-afad-75e87e0e1f81" />
+Exploring various files and pdks
+<img width="940" height="617" alt="image" src="https://github.com/user-attachments/assets/be60900c-fdfb-4460-9d3e-e7a7ed01b90c" /> 
+Start Openlane and Prepare design 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/d5c59e13-5328-4363-91a5-0824706079e2" />
 Prep design Completed
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/5dc1eb5e-e27a-4bf6-834c-eebd3e9d356f" />
 
 
-**Exploring picorv32a directory and runs directory
+Exploring picorv32a directory and runs directory <br>
 Once Design Prep step is completed, a folder with current date is created in runs directory and a merged.lef is created inside tmf folder of newly created current_date directory **
 <img width="602" height="366" alt="image" src="https://github.com/user-attachments/assets/7bbad248-5bce-4b07-b614-37b90c146793" />
 
 **Synthesis Successful**
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/33d8b284-538c-4127-a976-d87c6670d992" />
-<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/70875ecc-5873-4ce8-9ca9-78f989c7d111" />
 
 
 **Flop ratio:** Number of F/F’s / Number of Cells =1613/14876
