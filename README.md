@@ -16,16 +16,27 @@ Day 1 Setup Openlane, Prepare Design and Run Synthesis
 <img width="940" height="617" alt="image" src="https://github.com/user-attachments/assets/be60900c-fdfb-4460-9d3e-e7a7ed01b90c" />
 **Start Openlane and Prepare design **
 <img width="602" height="410" alt="image" src="https://github.com/user-attachments/assets/d52092cf-5fcd-403c-afad-75e87e0e1f81" />
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/d5c59e13-5328-4363-91a5-0824706079e2" />
+Prep design Completed
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/5dc1eb5e-e27a-4bf6-834c-eebd3e9d356f" />
+
+
 **Exploring picorv32a directory and runs directory
 Once Design Prep step is completed, a folder with current date is created in runs directory and a merged.lef is created inside tmf folder of newly created current_date directory **
 <img width="602" height="366" alt="image" src="https://github.com/user-attachments/assets/7bbad248-5bce-4b07-b614-37b90c146793" />
 
 **Synthesis Successful**
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/33d8b284-538c-4127-a976-d87c6670d992" />
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/70875ecc-5873-4ce8-9ca9-78f989c7d111" />
+
 
 **Flop ratio:** Number of F/F’s / Number of Cells =1613/14876
 <img width="602" height="374" alt="image" src="https://github.com/user-attachments/assets/c302a2b8-c565-4c63-8923-b9089f080cf4" />
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/f516c7f9-8f77-473f-80fd-a8ea3712d0a4" />
+
 <img width="602" height="387" alt="image" src="https://github.com/user-attachments/assets/8340bbcf-22a1-49c9-8192-9cb82dddda5d" />
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/8891e449-6bc2-4bf2-90c8-155c4bd78a6f" />
+
 Floor Planning Successful
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/b7cec78d-d87e-42bf-836e-5bc498578ba4" />
 
