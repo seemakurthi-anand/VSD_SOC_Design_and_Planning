@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/badge/Simulation-ngspice-38bdf8?style=flat-square" alt="ngspice"/>
 </p>
 
-This repo contains work done during **VSD_SOC_Design_and_Planning**, a course of 10-day duration by **Kunal Ghosh**, **Mohammad Shalab**, and **Nickson** — an end-to-end, hands-on journey through the **RTL to GDSII** physical design flow using **open-source EDA tools**.
+This repo contains work done during **VSD_SOC_Design_and_Planning**, a course of 10-day duration by **Kunal Ghosh**, **Mohammad Shalab**, and **Nickson Jose** — an end-to-end, hands-on journey through the **RTL to GDSII** physical design flow using **open-source EDA tools**.
 
 > **Legend used throughout this README:** &nbsp; 📘 Theory &nbsp;·&nbsp; 🔬 Lab &nbsp;·&nbsp; 📂 Section &nbsp;·&nbsp; 🎥 Video/Topic
 
@@ -24,46 +24,59 @@ This repo contains work done during **VSD_SOC_Design_and_Planning**, a course of
 ## 📑 Table of Contents
 
 - [About the Course](#about-the-course)
-- [Section 1: RTL to GDSII Flow Overview](#section-1-rtl-to-gdsii-flow-overview)
-- [Section 2: Floorplanning, Library Binding & Placement Theory](#section-2-floorplanning-library-binding--placement-theory)
-- [Section 3: Physical Design Labs](#section-3-physical-design-labs)
-  - [Day 1: Setup OpenLane, Prepare Design and Run Synthesis](#day-1-setup-openlane-prepare-design-and-run-synthesis)
-  - [Day 2: Floorplanning, Placement & Cell Design Characterization](#day-2-floorplanning-placement--cell-design-characterization)
-  - [Day 3: CMOS Inverter Ngspice Simulations & Standard Cell Design](#day-3-cmos-inverter-ngspice-simulations--standard-cell-design)
-  - [Day 4: Timing Analysis, CTS, PDN & Routing](#day-4-timing-analysis-cts-pdn--routing)
 
----
+- [Day 1: Setup OpenLane, Prepare Design and Run Synthesis](#day-1-setup-openlane-prepare-design-and-run-synthesis)
+- [Day 2: Floorplanning, Placement & Cell Design Characterization](#day-2-floorplanning-placement--cell-design-characterization)
+- [Day 3: CMOS Inverter Ngspice Simulations & Standard Cell Design](#day-3-cmos-inverter-ngspice-simulations--standard-cell-design)
+- [Day 4: Timing Analysis, CTS, PDN & Routing](#day-4-timing-analysis-cts-pdn--routing)
+
+
 
 ## About the Course
 
-The course is organized into **5 key sections**:
+The course is organized into **5 Days**:
 
-| Section | Focus |
-|---|---|
-| **Section 1** | How Application C code is translated into hardware language and converted to layout; OpenLane ASIC design flow; open-source EDA tools up to synthesis |
-| **Section 2** | Floorplanning theory and labs; Library Binding and Placement theory and labs |
-| **Section 3** | Hands-on physical design labs across Day 1–4 (Synthesis → Floorplan → Placement → CTS → PDN → Routing) |
-| **Section 4** | *(not covered in this document yet)* |
-| **Section 5** | *(not covered in this document yet)* |
 
----
-
-## Section 1: RTL to GDSII Flow Overview
-
+## Day1:  Inception of open-source EDA, OpenLANE and Sky130 PDK 
+- Covers concepts such as pads, pins, straps, rings, die, core etc
 - Description of how an Application C code is translated into hardware language and, from there, how it is converted to layout
 - Description of Openlane ASIC design flow
 - Introduction to open-source EDA tools, covering the flow till synthesis
+- Labs explaining about how to open tcl shell and prepare the design and run synthesis
 
 ---
 
-## Section 2: Floorplanning, Library Binding & Placement Theory
+## Day 2: Floorplanning, Library Binding & Placement Theory
 
-- Theory about floor planning, along with the associated labs
-- Library Binding and Placement theory, along with the associated labs
-
+- Theory about floor planning, utilization factor, macros, decoupling capacitors, powerplanning, placement
+- Theory on Netlist binding, estimating wire length and capacitance of a connection to optimize placement (consider ideal clock)
+- Theory on Standard cell libraries, Characterization of standard cells and timing characterization
+- Labs on floorplan generation, placement and viewing floorplan and viewing the placed standard cells on magic layout
+  
 ---
 
-## Section 3: Physical Design Labs
+## Day 3: Design library cell using Magic Layout and ngspice characterization
+
+- Theory on SPICE deck, Switching Threshold
+- Theory on CMOS fabrication (16 Mask twin well process)
+- Theory on Sky130 tech rules and DRC rules
+- Labs on IO placer strategy and making changes to various parameters of openlane flow such as utilization factor on the go via $env, without explicitly touching config tcl files
+- Labs on introduction to vsdstdcell which is a custom inverter cell
+- Labs on verifying connections of custom inverter on Magic layout
+- Labs on extracting a SPICE netlist from layout, updating the missing portions in SPICE deck like vdd, gns values and inclusion of libraries
+- Labs on timing characterization on CMOS inverter (rise tie, fall time, propagation delay)
+- Labs on Adding missing DRC rules to Magic layout by updating the Sky130 tech file based on periphery rules such as poly.9, nwell rules
+
+
+## Day 4: Pre-layout timing analysis and importance of good clock tree
+- Theory on Delay tables
+- Labs on understanding tracks.info file which has info of offset and pitch
+- Labs on changing grid size in magic layout using tkcon window
+- Labs on OpenRoad, OpenSTA, CTS, Opti,ization of Slack
+- 
+## Day 5: Final steps for RTL2GDS using tritonRoute and openSTA 
+- Theory on Routing Algorithms, TritonRoute(Detailed Routing)
+- Labs on PDN and SPEF extraction(in newer version SPEF is automatically extracted during routing)
 
 ### Day 1: Setup OpenLane, Prepare Design and Run Synthesis
 🔬 **Lab** &nbsp;·&nbsp; 📂 Section: OpenLane Setup & Synthesis
