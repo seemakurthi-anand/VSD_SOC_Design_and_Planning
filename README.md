@@ -5,14 +5,14 @@
 <h1 align="center">VSD_SOC_Design_and_Planning</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Flow-RTL%20to%20GDSII-0f2436?style=flat-square&color=2dd4bf" alt="RTL to GDSII"/>
-  <img src="https://img.shields.io/badge/Tool-OpenLane-555?style=flat-square" alt="OpenLane"/>
-  <a href="https://skywater-pdk.readthedocs.io/en/main"><img src="https://img.shields.io/badge/PDK-Sky130-555?style=flat-square" alt="Sky130 PDK"/></a>
-  <img src="https://img.shields.io/badge/Synthesis-Yosys-555?style=flat-square" alt="Yosys"/>
-  <img src="https://img.shields.io/badge/Place%20%26%20Route-OpenROAD-555?style=flat-square" alt="OpenROAD"/>
-  <img src="https://img.shields.io/badge/STA-OpenSTA-555?style=flat-square" alt="OpenSTA"/>
-  <a href="https://opencircuitdesign.com/magic"><img src="https://img.shields.io/badge/Layout-Magic-555?style=flat-square" alt="Magic"/></a>
-  <img src="https://img.shields.io/badge/Simulation-ngspice-555?style=flat-square" alt="ngspice"/>
+  <img src="https://img.shields.io/badge/Flow-RTL%20to%20GDSII-2dd4bf?style=flat-square" alt="RTL to GDSII"/>
+  <img src="https://img.shields.io/badge/Tool-OpenLane-38bdf8?style=flat-square" alt="OpenLane"/>
+  <img src="https://img.shields.io/badge/PDK-Sky130-38bdf8?style=flat-square" alt="Sky130 PDK"/>
+  <img src="https://img.shields.io/badge/Synthesis-Yosys-38bdf8?style=flat-square" alt="Yosys"/>
+  <img src="https://img.shields.io/badge/Place%20%26%20Route-OpenROAD-38bdf8?style=flat-square" alt="OpenROAD"/>
+  <img src="https://img.shields.io/badge/STA-OpenSTA-38bdf8?style=flat-square" alt="OpenSTA"/>
+  <img src="https://img.shields.io/badge/Layout-Magic-38bdf8?style=flat-square" alt="Magic"/>
+  <img src="https://img.shields.io/badge/Simulation-ngspice-38bdf8?style=flat-square" alt="ngspice"/>
 </p>
 
 This repo contains work done during **VSD_SOC_Design_and_Planning**, a course of 10-day duration by **Kunal Ghosh**, **Mohammad Shalab**, and **Nickson** — an end-to-end, hands-on journey through the **RTL to GDSII** physical design flow using **open-source EDA tools**.
@@ -86,12 +86,11 @@ The course is organized into **5 key sections**:
 #### Exploring picorv32a directory and runs directory
 
 Once the Design Prep step is completed, a folder with the current date is created in the `runs` directory, and a `merged.lef` is created inside the `tmp` folder of the newly created current-date directory.
+<img width="1855" height="568" alt="image" src="https://github.com/user-attachments/assets/18d8151a-eb01-42d4-bbb8-45e58a848d26" />
 
-<img width="602" height="366" alt="image" src="https://github.com/user-attachments/assets/7bbad248-5bce-4b07-b614-37b90c146793" />
 
 #### Synthesis Successful
-
-<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/70875ecc-5873-4ce8-9ca9-78f989c7d111" />
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/6f904ec6-a844-4798-b5fc-8378a9641835" />
 
 **Flop ratio:** Number of F/F's / Number of Cells = 1613/14876
 
@@ -100,8 +99,7 @@ Once the Design Prep step is completed, a folder with the current date is create
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/8891e449-6bc2-4bf2-90c8-155c4bd78a6f" />
 
 #### Floor Planning Successful
-
-<img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/b7cec78d-d87e-42bf-836e-5bc498578ba4" />
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/4f0152cf-dc4a-4c1f-8a2a-6c783d759afc" />
 
 </details>
 
@@ -169,13 +167,9 @@ A library is a combination of cells with various functionalities, various sizes,
 
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/8f8cf72d-25ef-4611-83ad-9db7b13e6324" />
 
-**Labs for [`git clone vsdstdcelldesign`](https://github.com/nickson-jose/vsdstdcelldesign.git)**
+**Labs for `git clone vsdstdcelldesign`**
 
 Commands to clone from git and use the `.mag` file:
-
-```bash
-git clone https://github.com/nickson-jose/vsdstdcelldesign.git
-```
 
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/76774904-9ed4-429f-b5d0-533bed552a3e" />
 
@@ -252,13 +246,9 @@ Input rise, Output fall:
 | O/p rise delay | 2.211n − 2.15n = **0.061n** |
 | O/p fall delay | *(not recorded)* |
 
-**Adding missing DRC rules wrt [Skywater130](https://skywater-pdk.readthedocs.io/en/main)**
+**Adding missing DRC rules wrt Skywater130**
 
-First, download magic layout examples from [opencircuitdesign.com](https://opencircuitdesign.com):
-
-```bash
-wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
-```
+First, download magic layout examples:
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/1379d07f-593a-47d7-9c5b-70061504778a" />
 
@@ -266,7 +256,7 @@ DRC not catching errors:
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/86ca2876-968c-4405-9616-c4d81054acb6" />
 
-Adding rule polyres, poly distance rule (see the [Skywater130 periphery rules](https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html) for reference):
+Adding rule polyres, poly distance rule:
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/1b05c432-bb13-462f-b4e2-da693b80e6b7" />
 
@@ -553,16 +543,13 @@ After SPEF reading:
 
 ## 📚 References
 
-> Add more links here as you go — course link, instructor profiles, and any other resources used.
+> Add links to the course, instructor profiles, tool documentation, and any external resources here.
 
-- [vsdstdcelldesign](https://github.com/nickson-jose/vsdstdcelldesign.git) — standard cell layout repo used in Day 3 labs
-- [OpenCircuitDesign](https://opencircuitdesign.com) — home of Magic VLSI and open_pdks
-- [Magic VLSI Layout Tool](https://opencircuitdesign.com/magic) — official Magic documentation
-- [Skywater PDK Documentation](https://skywater-pdk.readthedocs.io/en/main) — official Sky130 PDK docs
-- [Skywater PDK — Periphery Rules](https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html) — DRC periphery rules reference
-- [google/skywater-pdk](https://github.com/google/skywater-pdk) — Sky130 PDK GitHub repository
 - [ ] Course link
-- [ ] Instructor profiles
+- [ ] OpenLane documentation
+- [ ] Sky130 PDK documentation
+- [ ] Magic VLSI documentation
+- [ ] ngspice documentation
 
 ---
 
