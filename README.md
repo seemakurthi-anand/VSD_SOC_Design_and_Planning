@@ -426,17 +426,45 @@ Open STA results:
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/9c1168fd-1d41-40c4-a309-dd87c5560fb4" />
 
-> This OR gate, which is of small size, has many fanouts.
+This OR gate, which is of small size, has many fanouts.
 
 **Changing Drive strength for Gates with High Fanout**
+
+Fix1:
+<img width="1857" height="698" alt="image" src="https://github.com/user-attachments/assets/74d3faee-2146-4287-9306-f7f0d454a384" />
 
 The following are various commands to check the driver and fanouts of a net, replace it with a larger cell, and generate reports with 4-bit precision in displayed values:
 
 <img width="1853" height="282" alt="image" src="https://github.com/user-attachments/assets/9420f2ec-a2d9-40a1-bab2-b4bac1d44690" />
-
+Result_1
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/1015e468-843f-44d3-a878-574e4789bf8c" />
-
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/9ca84d6e-4a85-4761-81d2-27700b7d7cad" />
+
+Fix2:
+<img width="1856" height="677" alt="image" src="https://github.com/user-attachments/assets/ffbf6e9c-cf81-4922-a473-3063940b33c3" />
+Commands
+<img width="1853" height="282" alt="image" src="https://github.com/user-attachments/assets/c89b26c0-2655-482c-a75c-643070987a87" />
+Result_2
+<img width="1854" height="719" alt="image" src="https://github.com/user-attachments/assets/a0bdda10-3391-4607-bd49-a8f090748fd3" />
+<img width="1851" height="493" alt="image" src="https://github.com/user-attachments/assets/0506ca30-19d4-4952-843c-f676e346a604" />
+
+Fix3:
+<img width="1854" height="89" alt="image" src="https://github.com/user-attachments/assets/68a2c335-9b56-49d2-bb9d-7a9248d17a8e" />
+Commands
+<img width="1854" height="228" alt="image" src="https://github.com/user-attachments/assets/285563b2-1744-4831-89a4-3a68ad08eee6" />
+Result_3
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/9b229628-63e4-4b0e-a0a4-c4f4f1a0d6a6" />
+<img width="1854" height="241" alt="image" src="https://github.com/user-attachments/assets/70068cff-013f-4355-b339-2b121877cb76" />
+
+Fix4:
+<img width="1833" height="510" alt="image" src="https://github.com/user-attachments/assets/65785dd2-82e9-485a-b0c6-91d46c7f166f" />
+Commands
+<img width="1851" height="231" alt="image" src="https://github.com/user-attachments/assets/267a5f90-37b7-4742-bdcf-c5df98f37010" />
+
+Result_4
+<img width="1851" height="231" alt="image" src="https://github.com/user-attachments/assets/efbf8a65-9dbe-4c10-8047-e0bdfad969a6" />
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/bed89786-5533-43a2-9fcb-41f43414628e" />
+
 
 **Finally, slack changed from -23.9 to -22.6173**
 
@@ -444,7 +472,7 @@ Instances of the `_14506_` gate that caused more impact:
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/bc92d6d9-a500-4f8c-a416-68d70ef1e299" />
 
-**Continuing the previous design of 0ns slack**
+**Continuing back the previous design of 0ns slack for further steps**
 
 Synthesis:
 
