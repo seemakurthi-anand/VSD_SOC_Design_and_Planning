@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/badge/Simulation-ngspice-616161?style=flat-square" alt="ngspice"/>
 </p>
 
-This repo contains work done during **VSD_SOC_Design_and_Planning**, a course of 10-day duration by **Kunal Ghosh**, **Mohammad Shalab**, and **Nickson** — an end-to-end, hands-on journey through the **RTL to GDSII** physical design flow using **open-source EDA tools**.
+This repo contains work done during **VSD_SOC_Design_and_Planning**, a course of 10-day duration by **Kunal Ghosh**, **Mohammad Shalan**, and **Nickson Jose** — an end-to-end, hands-on journey through the **RTL to GDSII** physical design flow using **open-source EDA tools**.
 
 > **Legend used throughout this README:** &nbsp; 📘 Theory &nbsp;·&nbsp; 🏭 Lab
 
