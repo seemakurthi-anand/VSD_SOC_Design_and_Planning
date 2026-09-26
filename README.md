@@ -7,11 +7,13 @@
   <img src="https://img.shields.io/badge/Flow-RTL%20to%20GDSII-0d47a1?style=flat-square" alt="RTL to GDSII"/>
   <img src="https://img.shields.io/badge/Tool-OpenLane-d32f2f?style=flat-square" alt="OpenLane"/>
   <a href="https://skywater-pdk.readthedocs.io/en/main"><img src="https://img.shields.io/badge/PDK-Sky130-1b5e20?style=flat-square" alt="Sky130 PDK"/></a>
-  <img src="https://img.shields.io/badge/Synthesis-Yosys-616161?style=flat-square" alt="Yosys"/>
-  <img src="https://img.shields.io/badge/Place%20%26%20Route-OpenROAD-0d47a1?style=flat-square" alt="OpenROAD"/>
+  <img src="https://img.shields.io/badge/Synthesis-Yosys-0d47a1?style=flat-square" alt="Yosys,abc"/>
   <img src="https://img.shields.io/badge/STA-OpenSTA-1b5e20?style=flat-square" alt="OpenSTA"/>
+  <img src="https://img.shields.io/badge/Route-TritonRoute-0d47a1?style=flat-square" alt="TritonRoute"/>
   <a href="https://opencircuitdesign.com/magic"><img src="https://img.shields.io/badge/Layout-Magic-d32f2f?style=flat-square" alt="Magic"/></a>
   <img src="https://img.shields.io/badge/Simulation-ngspice-616161?style=flat-square" alt="ngspice"/>
+  <img src="https://img.shields.io/badge/Languages-Verilog, TCL, bash-d32f2f?style=flat-square" alt="TritonRoute"/>
+
 </p>
 
 This repo contains work done during **VSD_SOC_Design_and_Planning**, a course of 10-day duration by **Kunal Ghosh**, **Mohammad Shalan**, and **Nickson Jose** — an end-to-end, hands-on journey through the **RTL to GDSII** physical design flow using **open-source EDA tools**.
