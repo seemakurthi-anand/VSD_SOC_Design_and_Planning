@@ -1,8 +1,8 @@
 <img width="317" height="19" alt="image" src="https://github.com/user-attachments/assets/946afa7c-bd61-4147-bcd2-af70275cdb48" /><img width="707" height="19" alt="image" src="https://github.com/user-attachments/assets/de89d7ad-28cc-4539-8f19-c4a8ac3eadf2" /><p align="center">
-  <img src="assets/banner.svg" alt="VLSI SoC Design and Planning" width="100%"/>
+  <img src="banner.svg" alt="VLSI SoC Design and Planning" width="100%"/>
 </p>
 
-<h1 align="center">VSD_SOC_Design_and_Planning</h1>
+<!--<h1 align="center">VSD_SOC_Design_and_Planning</h1> -->
 
 <p align="center">
   <img src="https://img.shields.io/badge/Flow-RTL%20to%20GDSII-0d47a1?style=flat-square" alt="RTL to GDSII"/>
