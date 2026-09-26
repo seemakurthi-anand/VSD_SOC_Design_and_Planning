@@ -366,7 +366,7 @@ change2
 tech load sky130A.tech
 
 # Change drc style to drc full. By default it is drc fast if nothing is mentioned
-# We have updated sky130A.tech file in a way that it throw the DRC error only during drc (full) mode
+# We have updated sky130A.tech file in a way that it throw the DRC error for nwell missing tap only during drc (full) mode
 drc style drc(full)
 # Must re-run drc check to see updated drc errors
 drc check
