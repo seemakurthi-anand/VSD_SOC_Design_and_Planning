@@ -1,4 +1,3 @@
-<img width="317" height="19" alt="image" src="https://github.com/user-attachments/assets/946afa7c-bd61-4147-bcd2-af70275cdb48" /><img width="707" height="19" alt="image" src="https://github.com/user-attachments/assets/de89d7ad-28cc-4539-8f19-c4a8ac3eadf2" /><p align="center">
   <img src="banner.svg" alt="VLSI SoC Design and Planning" width="100%"/>
 </p>
 
@@ -217,7 +216,16 @@ set ::env(FP_IO_MODE) 2
 **Labs for [`git clone vsdstdcelldesign`](https://github.com/nickson-jose/vsdstdcelldesign.git)**
 
 Commands to clone from git and use the `.mag` file:
-
+```bash
+# Cloning git repo that contains the custom cell
+git clone https://github.com/nickson-jose/vsdstdcelldesign.git
+# Copy tech file into vsddtdcelldesign folder from openlane_working_dir/pdks/sky130A/libs.tech/magic for easier access
+cp sky130A.tech /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign
+# Go to vsdstdcelldesign folder
+cd vsdstdcelldesign
+# Open magic layout from vsdstdcelldesign folder to see inverter layout
+magic -T  sky130A.tech sky130_inv.mag &
+```
 
 
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/76774904-9ed4-429f-b5d0-533bed552a3e" />
