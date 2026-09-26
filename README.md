@@ -146,7 +146,6 @@ Before Placement, the standard cells' positions are not fixed yet.
 
 #### Session 2 — Labs on Placement (Congestion-aware placement using ReplAce)
 🏭 Lab
-**Commands:**
 ```bash
 # To run placement
 run_placement
@@ -161,7 +160,12 @@ Here, we focus on congestion-based placement, not really bothering about the tim
 **Completion indication of placement**
 
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/85131ec9-dc10-4247-9de9-d766eefa816d" />
-
+```bash
+# To open magic layout after placement by considering def file generated after placement
+# Go to results/placement
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-09_16-08/results/placement/
+magic -T ../../../../../../../pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
+```
 **Standard cells arrangement after Placement step**
 
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/9530eb59-1708-4a4e-b4bd-d5cc737e347e" />
@@ -292,37 +296,57 @@ Input rise, Output fall:
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/8fd2c3e7-bf53-4c42-b86d-82a795b26ce3" />
 
 **Timing results:**
-Whwn we click a point in waveform, that point info is shown in command window in which ngspice simulation is run
+When we click a point in waveform, that point info is shown in command window in which ngspice simulation is run
 | Metric | Value |
 |---|---|
-| Rise time of O/p | 2.245n − 2.182n = **0.063n** |
-| Fall time of O/p | 4.095n − 4.052n = **0.043n** |
-| O/p rise delay | 2.211n − 2.15n = **0.061n** |
-| O/p fall delay | *(not recorded)* |
+| Rise time of O/p (from 20% to 80%) | 2.245n − 2.182n = **0.063n** |
+| Fall time of O/p (from 80% to 20%)| 4.095n − 4.052n = **0.043n** |
+| O/p rise delay (o/p rise to 50% - i/p fall to 50%)| 2.211n − 2.15n = **0.061n** |
+| O/p fall delay(o/p fall to 50% - i/p rise to 50%) | 4.077n - 4.05n = **0.027n** |
 
 **Adding missing DRC rules wrt [Skywater130](https://skywater-pdk.readthedocs.io/en/main)**
 
 First, download magic layout examples from [opencircuitdesign.com](https://opencircuitdesign.com):
 
 ```bash
+# Go to vsduser folder or jst type cd to go to user in any window
+cd
+# Command to download the example layout files
 wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+# Since lab file is compressed so use tar command to extract it
+tar xfz drc_tests.tgz
+# Go to drc_tests
+cd drc_tests
+magic -d XR &
+# Flags XR give better graphics
 ```
-
+Commands to get sample layouts from opencircuit.com and to extract them
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/1379d07f-593a-47d7-9c5b-70061504778a" />
+poly.9 rule
+| Name | Description | Flags | Value | Unit
+|---|---|---|---|---|
+| (poly.9) | Poly resistor spacing to poly or spacing (no overlap) to diff/tap |  | 0.480 | µm |
 
-DRC not catching errors:
+DRC not catching errors, although poly.9 rule violated:
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/86ca2876-968c-4405-9616-c4d81054acb6" />
 
-Adding rule polyres, poly distance rule (see the [Skywater130 periphery rules](https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html) for reference):
+Adding rule polyres, poly distance rule in sky130A.tech (see the [Skywater130 periphery rules](https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html) for reference):
 
-<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/1b05c432-bb13-462f-b4e2-da693b80e6b7" />
-
-<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/f5648ed5-87af-4a18-819c-c0f8a81dc67f" />
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/58ad639f-58e5-4dc9-9ff9-a060ab3de1d3" />
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/ff84b746-6985-4cac-90fd-70965400796b" />
+
+Commands to run in tkcon window to load DRC rules into tech file
+```bash
+# Loading updated tech file
+tech load sky130A.tech
+#  re-run drc check to see updated drc errors
+drc check
+# Check the DRC error corresponding to selected region
+drc why
+```
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/13ab1a9e-f2b1-4a08-80cd-f59dec5ae9e6" />
 
@@ -331,6 +355,24 @@ Adding rule polyres, poly distance rule (see the [Skywater130 periphery rules](h
 **DNWell**
 
 <img width="1919" height="916" alt="image" src="https://github.com/user-attachments/assets/8c8ca10e-0abd-474a-885b-4dc7d55bfb2e" />
+
+Changes made in sky130A.tech file
+change1
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/466a0266-e42c-4ffc-97ad-43b8e0973016" />
+change2
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/90d0f220-a1d5-4dd4-8653-03f05dd71b93" />
+```bash
+# Loading updated tech file
+tech load sky130A.tech
+
+# Change drc style to drc full. By default it is drc fast if nothing is mentioned
+# We have updated sky130A.tech file in a way that it throw the DRC error only during drc (full) mode
+drc style drc(full)
+# Must re-run drc check to see updated drc errors
+drc check
+# Check the DRC error corresponding to selected region
+drc why
+```
 
 **Nwell DRC Error check**
 
