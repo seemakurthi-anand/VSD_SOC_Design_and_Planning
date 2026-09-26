@@ -699,7 +699,7 @@ After SPEF reading:
 - [Skywater PDK Documentation](https://skywater-pdk.readthedocs.io/en/main) — official Sky130 PDK docs
 - [Skywater PDK — Periphery Rules](https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html) — DRC periphery rules reference
 - [google/skywater-pdk](https://github.com/google/skywater-pdk) — Sky130 PDK GitHub repository
-- [ ] Course link
+- [https://www.vlsisystemdesign.com/digital-vlsi-soc-design-and-planning/ ) - Course link
 - [ ] Instructor profiles
 
 ---
