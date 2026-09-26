@@ -1,4 +1,4 @@
-<p align="center">
+<img width="317" height="19" alt="image" src="https://github.com/user-attachments/assets/946afa7c-bd61-4147-bcd2-af70275cdb48" /><img width="707" height="19" alt="image" src="https://github.com/user-attachments/assets/de89d7ad-28cc-4539-8f19-c4a8ac3eadf2" /><p align="center">
   <img src="assets/banner.svg" alt="VLSI SoC Design and Planning" width="100%"/>
 </p>
 
@@ -109,19 +109,52 @@ Once the Design Prep step is completed, a folder with the current date is create
 
 #### Session 1 — Labs on Floor Planning
 🏭 Lab
+commands to run floorplan and open magic layout view
+```bash
+# To run floorplan
+run_floorplan
+# To open magic layout after floorplan
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-09_16-08/results/floorplan/
+# For magic layout to open, we need tech file, lef file and def file
+magic -T ../../../../../../../pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+```
+After Floorplan
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/4841248a-d04e-44f9-9659-7c467527c351" />
+
+Equidistant pins during floorplanning
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/c7413d98-98e0-44f1-9db2-ac3e640df8b6" />
+
+Vmetal
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/8a7d2466-eec0-4cdc-9f23-df8c965928f9" />
+
+Hmetal
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/f042da77-f326-44a1-9353-c374b1c4f8f7" />
+
+Tap Cells
+
+file:///home/vsduser/Pictures/floorplan/tap_cells.png<img width="1280" height="768" alt="image" src="https://github.com/user-attachments/assets/76c7133c-a7d5-41c2-b75e-87e28eeb4e6c" />
+
+
+Decap Cells
+<img width="1280" height="768" alt="image" src="https://github.com/user-attachments/assets/a941834a-6ddc-4651-9acc-7d394efbf0a0" />
+
 
 Before Placement, the standard cells' positions are not fixed yet.
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/c6fe0ed4-27a4-48b3-81d4-a0ba1d08d374" />
 
-<img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/7ae2e053-0c34-4702-8043-ad1ebc218dbf" />
+
 
 #### Session 2 — Labs on Placement (Congestion-aware placement using ReplAce)
 🏭 Lab
+**Commands:**
+```bash
+# To run placement
+run_placement
+```
 
 Here, we focus on congestion-based placement, not really bothering about the timing. We try to reduce the congestion. There are two kinds of placement:
 - Global placement
 - Detailed placement
-
-**Commands:**
 
 <img width="1280" height="768" alt="image" src="https://github.com/user-attachments/assets/f1833c50-8b17-4aff-9cbf-bf75cc1b0ada" />
 
@@ -170,7 +203,10 @@ A library is a combination of cells with various functionalities, various sizes,
 #### Session 1 — Labs on CMOS Inverter Ngspice Simulations
 🏭 Lab
 
-**IO placer revision, changing IO mode to 2**
+**IO placer - changing IO mode to 2 on the go using env**
+```bash
+set ::env(FP_IO_MODE) 2
+```
 
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/8f8cf72d-25ef-4611-83ad-9db7b13e6324" />
 
@@ -179,12 +215,19 @@ A library is a combination of cells with various functionalities, various sizes,
 Commands to clone from git and use the `.mag` file:
 
 ```bash
+# Cloning git repo that contains the custom cell
 git clone https://github.com/nickson-jose/vsdstdcelldesign.git
+# Copy tech file into vsddtdcelldesign folder from openlane_working_dir/pdks/sky130A/libs.tech/magic for easier access
+cp sky130A.tech /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign
+# Go to vsdstdcelldesign folder
+cd vsdstdcelldesign
+# Open magic layout from vsdstdcelldesign folder to see inverter layout
+magic -T  sky130A.tech sky130_inv.mag &
 ```
 
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/76774904-9ed4-429f-b5d0-533bed552a3e" />
 
-**Inverter layout already available** — red line is polysilicon:
+**Inverter layout already available from git repo** — red line is polysilicon:
 
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/a91be289-96df-4705-9380-2aa51068a006" />
 
@@ -217,7 +260,7 @@ Check NMOS Source to GND:
 
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/58504398-7485-4877-baed-aba82ee255b3" />
 
-**Sample DRC Error**
+**Example of DRC Error**
 
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/05299365-65cb-4171-9018-7f35d13ffeb4" />
 
@@ -249,7 +292,7 @@ Input rise, Output fall:
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/8fd2c3e7-bf53-4c42-b86d-82a795b26ce3" />
 
 **Timing results:**
-
+Whwn we click a point in waveform, that point info is shown in command window in which ngspice simulation is run
 | Metric | Value |
 |---|---|
 | Rise time of O/p | 2.245n − 2.182n = **0.063n** |
