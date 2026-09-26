@@ -218,16 +218,7 @@ set ::env(FP_IO_MODE) 2
 
 Commands to clone from git and use the `.mag` file:
 
-```bash
-# Cloning git repo that contains the custom cell
-git clone https://github.com/nickson-jose/vsdstdcelldesign.git
-# Copy tech file into vsddtdcelldesign folder from openlane_working_dir/pdks/sky130A/libs.tech/magic for easier access
-cp sky130A.tech /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign
-# Go to vsdstdcelldesign folder
-cd vsdstdcelldesign
-# Open magic layout from vsdstdcelldesign folder to see inverter layout
-magic -T  sky130A.tech sky130_inv.mag &
-```
+
 
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/76774904-9ed4-429f-b5d0-533bed552a3e" />
 
@@ -699,7 +690,7 @@ After SPEF reading:
 - [Skywater PDK Documentation](https://skywater-pdk.readthedocs.io/en/main) — official Sky130 PDK docs
 - [Skywater PDK — Periphery Rules](https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html) — DRC periphery rules reference
 - [google/skywater-pdk](https://github.com/google/skywater-pdk) — Sky130 PDK GitHub repository
-- [https://www.vlsisystemdesign.com/digital-vlsi-soc-design-and-planning/ ) - Course link
+- [vlsi-soc-design-and-planning](https://www.vlsisystemdesign.com/digital-vlsi-soc-design-and-planning/ ) - Course link
 - [ ] Instructor profiles
 
 ---
