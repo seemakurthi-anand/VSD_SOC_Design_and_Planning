@@ -388,7 +388,8 @@ drc why
 **📋 Topics Covered**
 
 - 📘 Theory on Delay tables
-- 🏭 Labs on understanding `tracks.info` file which has info of offset and pitch
+- 🏭 Labs on understanding `tracks.info` file which has info of offset and pitch for route
+- 🏭 Labs on converting layout to LEF   
 - 🏭 Labs on changing grid size in magic layout using tkcon window
 - 🏭 Labs on OpenRoad, OpenSTA, CTS, Optimization of Slack
 
@@ -402,9 +403,18 @@ drc why
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/15880065-f38f-4549-80c0-5abb819887de" />
 
+Commands to enter in tkcon window to set grid
+```bash
+# To know about syntax of grid command
+help grid
+# Setting grid values
+grid 0.46um 0.34um 0.23um 0.17um
+```
+
 Width check for PR boundary:
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/ce146b30-534e-4cd1-b46b-87109edcdca0" />
+> 0.46um*3 = 1.38um
 
 Height check for PR boundary:
 
