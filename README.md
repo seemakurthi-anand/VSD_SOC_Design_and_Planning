@@ -161,12 +161,14 @@ Here, we focus on congestion-based placement, not really bothering about the tim
 **Completion indication of placement**
 
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/85131ec9-dc10-4247-9de9-d766eefa816d" />
+
 ```bash
 # To open magic layout after placement by considering def file generated after placement
 # Go to results/placement
 cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-09_16-08/results/placement/
 magic -T ../../../../../../../pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
 ```
+
 **Standard cells arrangement after Placement step**
 
 <img width="1920" height="1043" alt="image" src="https://github.com/user-attachments/assets/9530eb59-1708-4a4e-b4bd-d5cc737e347e" />
