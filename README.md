@@ -1,4 +1,4 @@
-  <img src="banner.svg" alt="VLSI SoC Design and Planning" width="100%"/>
+  <!-- <img src="banner.svg" alt="VLSI SoC Design and Planning" width="100%"/> -->
 </p>
 
 <!--<h1 align="center">VSD_SOC_Design_and_Planning</h1> -->
@@ -411,7 +411,7 @@ help grid
 grid 0.46um 0.34um 0.23um 0.17um
 ```
 
-Width check for PR boundary:
+**Width check for PR boundary**
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/ce146b30-534e-4cd1-b46b-87109edcdca0" />
 
@@ -423,7 +423,7 @@ Width check for PR boundary:
 
 > 0.34um*(8 grids) = 2.72um. Height should be even multiple
 
-Command to enter in tkcon windoow for generating lef file
+**Command to enter in tkcon windoow for generating lef file**
 ```bash
 # Gen lef file
 lef write
@@ -432,15 +432,30 @@ lef write
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/f0c6d0b1-5df4-4a48-a7b3-4027a3226f0f" />
 
-Lef file with pins and their direction, and also the order in which the description is mentioned:
+**Lef file with pins and their direction, and also the order in which the description is mentioned **
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/937c6e07-c54a-4881-998f-33a6dab2f83e" />
+
+Copy lef file and lib files associated to various pvt corners to ```bash picorv32a/src``` folder
+```bash
+cp sky130_vsdinv.lef ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
+cp libs/sky130_fd_sc_hd__* ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
+```
 
 **Sample Lib file with Timing and Cell characterization**
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/6a8ee19b-312e-4508-a83c-7a4f64cc3bd6" />
 
-<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/660607da-7b8a-413e-9104-c78168c9f9cd" />
+<!-- <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/660607da-7b8a-413e-9104-c78168c9f9cd" /> -->
+
+**Lines to be added in `config.tcl`**
+```bash
+set ::env(LIB_SYNTH) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"
+set ::env(LIB_FASTEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__fast.lib"
+set ::env(LIB_SLOWEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__slow.lib"
+set ::env(LIB_TYPICAL) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"
+set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/src/*.lef]
+```
 
 **Updated `config.tcl` file in `configs/picorv32a`**
 
@@ -449,6 +464,14 @@ Lef file with pins and their direction, and also the order in which the descript
 **Preparing design**
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/de956cb8-76c2-4a84-b723-b75d9ece199c" />
+
+**Setting lefs before synthesis**
+
+```bash
+#  commands to include newly added lef to openlane flow
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+```
 
 **Run Synthesis**
 
