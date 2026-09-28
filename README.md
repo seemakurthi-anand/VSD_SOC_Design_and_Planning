@@ -35,7 +35,7 @@ This repo contains work done during **VSD_SOC_Design_and_Planning**, a course of
 
 ## About the Course
 
-The course is organized into **5 Parts** each has both theory and Practice Labs. Its a self paced course which has to be completed in 10 days with flexible study time.
+The course is organized into **5 Parts** each has both theory and Practice Labs. Its a self paced course which has to be completed in 10 days with flexible study time. The course provides hands on experience about reaching till GDS from the Verilog netlist using various Opensource Tools which are free but provides decent optimization 
 <!-- The course is organized into **5 Parts**:
 
 | Part | Focus |
