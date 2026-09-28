@@ -18,36 +18,37 @@
 
 This repo contains work done during **VSD_SOC_Design_and_Planning**, a course of 10-day duration by **Kunal Ghosh**, **Mohammad Shalan**, and **Nickson Jose** — an end-to-end, hands-on journey through the **RTL to GDSII** physical design flow using **open-source EDA tools**.
 
-> **Legend used throughout this README:** &nbsp; 📘 Theory &nbsp;·&nbsp; 🏭 Lab
+<!-- > **Legend used throughout this README:** &nbsp; 📘 Theory &nbsp;·&nbsp; 🏭 Lab -->
 
 ---
 
 ## 📑 Table of Contents
 
 - [About the Course](#about-the-course)
-- [Day 1: Inception of open-source EDA, OpenLANE and Sky130 PDK](#day-1-inception-of-open-source-eda-openlane-and-sky130-pdk)
-- [Day 2: Floorplanning, Library Binding & Placement Theory](#day-2-floorplanning-library-binding--placement-theory)
-- [Day 3: Design library cell using Magic Layout and ngspice characterization](#day-3-design-library-cell-using-magic-layout-and-ngspice-characterization)
-- [Day 4: Pre-layout timing analysis and importance of good clock tree](#day-4-pre-layout-timing-analysis-and-importance-of-good-clock-tree)
-- [Day 5: Final steps for RTL2GDS using tritonRoute and openSTA](#day-5-final-steps-for-rtl2gds-using-tritonroute-and-opensta)
+- [Part 1: Inception of open-source EDA, OpenLANE and Sky130 PDK](#Part-1-inception-of-open-source-eda-openlane-and-sky130-pdk)
+- [Part 2: Floorplanning, Library Binding & Placement Theory](#Part-2-floorplanning-library-binding--placement-theory)
+- [Part 3: Design library cell using Magic Layout and ngspice characterization](#Part-3-design-library-cell-using-magic-layout-and-ngspice-characterization)
+- [Part 4: Pre-layout timing analysis and importance of good clock tree](#Part-4-pre-layout-timing-analysis-and-importance-of-good-clock-tree)
+- [Part 5: Final steps for RTL2GDS using tritonRoute and openSTA](#Part-5-final-steps-for-rtl2gds-using-tritonroute-and-opensta)
 
 ---
 
 ## About the Course
 
-The course is organized into **5 Days**:
+The course is organized into **5 Parts** each has both theory and Practice Labs. Its a self paced course which has to be completed in 10 days with flexible study time.
+<!-- The course is organized into **5 Parts**:
 
-| Day | Focus |
+| Part | Focus |
 |---|---|
-| **Day 1** | Inception of open-source EDA, OpenLANE and Sky130 PDK |
-| **Day 2** | Floorplanning, Library Binding & Placement Theory |
-| **Day 3** | Design library cell using Magic Layout and ngspice characterization |
-| **Day 4** | Pre-layout timing analysis and importance of good clock tree |
-| **Day 5** | Final steps for RTL2GDS using tritonRoute and openSTA |
+| **Part 1** | Inception of open-source EDA, OpenLANE and Sky130 PDK |
+| **Part 2** | Floorplanning, Library Binding & Placement Theory |
+| **Part 3** | Design library cell using Magic Layout and ngspice characterization |
+| **Part 4** | Pre-layout timing analysis and importance of good clock tree |
+| **Part 5** | Final steps for RTL2GDS using tritonRoute and openSTA | 
 
----
+--- -->
 
-## Day 1: Inception of open-source EDA, OpenLANE and Sky130 PDK
+## Part 1: Inception of open-source EDA, OpenLANE and Sky130 PDK
 
 **📋 Topics Covered**
 
@@ -58,7 +59,7 @@ The course is organized into **5 Days**:
 - 🏭 Labs explaining about how to open tcl shell and prepare the design and run synthesis
 
 <details>
-<summary><strong>🏭 Click to expand Day 1 walkthrough (screenshots &amp; commands)</strong></summary>
+<summary><strong>👉 Click to expand Part 1 walkthrough (screenshots &amp; commands)</strong></summary>
 
 #### Exploring various files and PDKs
 
@@ -96,7 +97,7 @@ Once the Design Prep step is completed, a folder with the current date is create
 
 ---
 
-## Day 2: Floorplanning, Library Binding & Placement Theory
+## Part 2: Floorplanning, Library Binding & Placement Theory
 
 **📋 Topics Covered**
 
@@ -106,7 +107,7 @@ Once the Design Prep step is completed, a folder with the current date is create
 - 🏭 Labs on floorplan generation, placement and viewing floorplan and viewing the placed standard cells on magic layout
 
 <details>
-<summary><strong>🏭 Click to expand Day 2 walkthrough (screenshots &amp; commands)</strong></summary>
+<summary><strong>👉 Click to expand Part 2 walkthrough (screenshots &amp; commands)</strong></summary>
 
 #### Session 1 — Labs on Floor Planning
 🏭 Lab
@@ -190,7 +191,7 @@ A library is a combination of cells with various functionalities, various sizes,
 
 ---
 
-## Day 3: Design library cell using Magic Layout and ngspice characterization
+## Part 3: Design library cell using Magic Layout and ngspice characterization
 
 **📋 Topics Covered**
 
@@ -205,7 +206,7 @@ A library is a combination of cells with various functionalities, various sizes,
 - 🏭 Labs on adding missing DRC rules to Magic layout by updating the Sky130 tech file based on periphery rules such as poly.9, nwell rules
 
 <details>
-<summary><strong>🏭 Click to expand Day 3 walkthrough (screenshots &amp; commands)</strong></summary>
+<summary><strong>👉 Click to expand Part 3 walkthrough (screenshots &amp; commands)</strong></summary>
 
 #### Session 1 — Labs on CMOS Inverter Ngspice Simulations
 🏭 Lab
@@ -385,7 +386,7 @@ drc why
 
 ---
 
-## Day 4: Pre-layout timing analysis and importance of good clock tree
+## Part 4: Pre-layout timing analysis and importance of good clock tree
 
 **📋 Topics Covered**
 
@@ -396,7 +397,7 @@ drc why
 - 🏭 Labs on OpenRoad, OpenSTA, CTS, Optimization of Slack
 
 <details>
-<summary><strong>🏭 Click to expand Day 4 walkthrough (screenshots &amp; commands)</strong></summary>
+<summary><strong>👉 Click to expand Part 4 walkthrough (screenshots &amp; commands)</strong></summary>
 
 #### Session 1
 🏭 Lab
@@ -671,7 +672,7 @@ Commands run after CTS:
 
 ---
 
-## Day 5: Final steps for RTL2GDS using tritonRoute and openSTA
+## Part 5: Final steps for RTL2GDS using tritonRoute and openSTA
 
 **📋 Topics Covered**
 
@@ -679,7 +680,7 @@ Commands run after CTS:
 - 🏭 Labs on PDN and SPEF extraction (in newer versions, SPEF is automatically extracted during routing)
 
 <details>
-<summary><strong>🏭 Click to expand Day 5 walkthrough (screenshots &amp; commands)</strong></summary>
+<summary><strong>👉 Click to expand Part 5 walkthrough (screenshots &amp; commands)</strong></summary>
 
 **PDN Successful**
 
@@ -737,7 +738,7 @@ After SPEF reading:
 
 <!-- > Add more links here as you go — course link, instructor profiles, and any other resources used. -->
 
-- [vsdstdcelldesign](https://github.com/nickson-jose/vsdstdcelldesign.git) — standard cell layout repo used in Day 3 labs
+- [vsdstdcelldesign](https://github.com/nickson-jose/vsdstdcelldesign.git) — standard cell layout repo used in Part 3 labs
 - [OpenCircuitDesign](https://opencircuitdesign.com) — home of Magic VLSI and open_pdks
 - [Magic VLSI Layout Tool](https://opencircuitdesign.com/magic) — official Magic documentation
 - [Skywater PDK Documentation](https://skywater-pdk.readthedocs.io/en/main) — official Sky130 PDK docs
