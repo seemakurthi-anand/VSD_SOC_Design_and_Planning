@@ -432,11 +432,11 @@ lef write
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/f0c6d0b1-5df4-4a48-a7b3-4027a3226f0f" />
 
-**Lef file with pins and their direction, and also the order in which the description is mentioned **
+**Lef file with pins and their direction, and also the order in which the description is mentioned**
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/937c6e07-c54a-4881-998f-33a6dab2f83e" />
 
-Copy lef file and lib files associated to various pvt corners to ```bash picorv32a/src``` folder
+**Copy lef file and lib files associated to various pvt corners to ` picorv32a/src` folder**
 ```bash
 cp sky130_vsdinv.lef ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
 cp libs/sky130_fd_sc_hd__* ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
@@ -468,7 +468,7 @@ set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/sr
 **Setting lefs before synthesis**
 
 ```bash
-#  commands to include newly added lef to openlane flow
+# commands to include newly added lef to openlane flow
 set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
 add_lefs -src $lefs
 ```
