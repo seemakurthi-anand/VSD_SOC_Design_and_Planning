@@ -133,7 +133,7 @@ Hmetal
 
 Tap Cells
 
-file:///home/vsduser/Pictures/floorplan/tap_cells.png<img width="1280" height="768" alt="image" src="https://github.com/user-attachments/assets/76c7133c-a7d5-41c2-b75e-87e28eeb4e6c" />
+<img width="1280" height="768" alt="image" src="https://github.com/user-attachments/assets/76c7133c-a7d5-41c2-b75e-87e28eeb4e6c" />
 
 
 Decap Cells
