@@ -414,12 +414,20 @@ grid 0.46um 0.34um 0.23um 0.17um
 Width check for PR boundary:
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/ce146b30-534e-4cd1-b46b-87109edcdca0" />
-> 0.46um*3 = 1.38um
 
-Height check for PR boundary:
+> 0.46um*(3 grids) = 1.38um. Width should be odd multiple
+
+**Height check for PR boundary**
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/5c746c2e-ec1f-41f3-ab36-723ad67a984a" />
 
+> 0.34um*(8 grids) = 2.72um. Height should be even multiple
+
+Command to enter in tkcon windoow for generating lef file
+```bash
+# Gen lef file
+lef write
+```
 **Lef successfully extracted**
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/f0c6d0b1-5df4-4a48-a7b3-4027a3226f0f" />
@@ -702,7 +710,7 @@ After SPEF reading:
 
 ## 📚 References
 
-> Add more links here as you go — course link, instructor profiles, and any other resources used.
+<!-- > Add more links here as you go — course link, instructor profiles, and any other resources used. -->
 
 - [vsdstdcelldesign](https://github.com/nickson-jose/vsdstdcelldesign.git) — standard cell layout repo used in Day 3 labs
 - [OpenCircuitDesign](https://opencircuitdesign.com) — home of Magic VLSI and open_pdks
@@ -711,7 +719,7 @@ After SPEF reading:
 - [Skywater PDK — Periphery Rules](https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html) — DRC periphery rules reference
 - [google/skywater-pdk](https://github.com/google/skywater-pdk) — Sky130 PDK GitHub repository
 - [vlsi-soc-design-and-planning](https://www.vlsisystemdesign.com/digital-vlsi-soc-design-and-planning/ ) - Course link
-- [ ] Instructor profiles
+- [ Kunal Ghosh ](https://www.vlsisystemdesign.com/about-me/) - Instructor profiles
 
 ---
 
@@ -1289,7 +1297,6 @@ After SPEF reading:
 
 ---
 
--->
-
-
 [⬆ Back to top](#vsd_soc_design_and_planning)
+
+-->
