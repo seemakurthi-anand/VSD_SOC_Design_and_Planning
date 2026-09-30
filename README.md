@@ -426,7 +426,7 @@ grid 0.46um 0.34um 0.23um 0.17um
 
 > 0.34um*(8 grids) = 2.72um. Height should be even multiple
 
-**Command to enter in tkcon windoow for generating lef file**
+**Command to enter in tkcon windoow for generating lef file from layout**
 ```bash
 # Gen lef file
 lef write
@@ -471,7 +471,7 @@ set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/sr
 **Setting lefs before synthesis**
 
 ```bash
-# commands to include newly added lef to openlane flow
+# commands to include newly added lef to openlane flow before synthesis step
 set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
 add_lefs -src $lefs
 ```
@@ -486,7 +486,7 @@ Synthesis successful but with a huge negative slack:
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/7a8998e7-129c-4369-9710-fd9627291f8d" />
 
-Area before Synth_strategy changed:
+Area before changing Synth_strategy :
 
 <img width="1846" height="174" alt="image" src="https://github.com/user-attachments/assets/65670cd3-9010-4502-a28c-78ede681a9cc" />
 
@@ -494,7 +494,37 @@ Readme info of `SYNTH_STRATEGY` from `openlane/configuration`:
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/53193c76-7d61-4740-a480-31506cb5c3cf" />
 
+> Apply proper synthesis strategy to improve the slack
+
 Commands to view and change synthesis parameters:
+
+```bash
+
+# SYNTH_BUFFERING is for high fanout nets. Bascially reset pins, it go to various blocks. This has to be buffered.
+# SYNTH_SIZING is sizing strategy, basically upsizing or downsizing the buffer based on delay strategy we ar using 0-> sizing is disabled, 1-> sizing is enabled
+# SYNTH_DRIVING_CELL is for i/p port. If i/p port has lot of fanout then it needs more drive strength cell to drive the i/p. By default it is  sky130_fd_sc_hd__inv_8. inv_8 is good enough
+
+
+
+# Command to display current value of variable SYNTH_STRATEGY
+echo $::env(SYNTH_STRATEGY)
+
+# Command to set new value for SYNTH_STRATEGY
+set ::env(SYNTH_STRATEGY) "DELAY 3"
+
+# Command to display current value of variable SYNTH_BUFFERING to check whether it's enabled
+echo $::env(SYNTH_BUFFERING)
+
+# Command to display current value of variable SYNTH_SIZING
+echo $::env(SYNTH_SIZING)
+
+# Command to set new value for SYNTH_SIZING
+set ::env(SYNTH_SIZING) 1
+
+# Command to display current value of variable SYNTH_DRIVING_CELL to check whether it's the proper cell or not
+echo $::env(SYNTH_DRIVING_CELL)
+
+```
 
 <img width="1852" height="253" alt="image" src="https://github.com/user-attachments/assets/b8f991a7-b9a1-4576-844c-f4dcdcaf73d0" />
 
@@ -502,15 +532,24 @@ Area after Synth_strategy changed:
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/7c6b3693-2339-4140-905e-6d54a978e03f" />
 
+> Worst case slack become '0' at the cost of an increase in Area
+
 Automatic updation of `merged.lef` inside `runs/date_folder/tmp`, ensuring no problems will happen during placement:
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/02631c66-2850-4e03-87da-5b6dbde086bb" />
 
-Unexpected error encountered during `run_flowplan`:
+Unexpected error encountered during `run_floorplan`:
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/63ad0bfa-e067-4c69-aa43-9afa3ea49e13" />
 
 Sequence of steps run to resolve floor plan errors:
+
+```bash
+# Following commands are gathered from floorplan.tcl and also from Floorplan commands section of OPENLANE_commands.md
+init_floorplan
+place_io
+tap_decap_or
+```
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/43d40a0f-5e43-467e-8a06-b3a14d0446c0" />
 
