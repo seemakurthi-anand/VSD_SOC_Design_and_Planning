@@ -571,11 +571,38 @@ Extend View (by typing `extend` in tkcon window) — we can also see abutment (i
 
 <img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/23b5f201-f962-45b8-9950-9402271e2df7" />
 
-**Optimizing the worst-case slack**
+**Post-Synthesis timing analysis with OpenSTA**
 
+As previously we got a slack of 0n when applied various forms of SYNTH_STRATEGY, now we either use previous file / create a new design where we just have one parameter set i.e SYNTH_SIZING as '1' and got negative slack and try to optimize using OpenSTA tool. 
+```bash
+
+# Now the OpenLANE flow is ready to run any design and initially we have to prep the design creating some necessary files and directories for running a specific design which in our case is 'picorv32a'
+prep -design picorv32a
+
+# Adiitional commands to include newly added lef to openlane flow
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+
+# Command to set new value for SYNTH_SIZING
+set ::env(SYNTH_SIZING) 1
+
+# Now that the design is prepped and ready, we can run synthesis using following command
+run_synthesis
+```
+
+As OpenSTA is outside OpenLane, so we need to have some linking
 To use OpenSTA, we need to create two more files and work on it:
 1. `pre_sta.conf` created in `openlane/` directory
-2. `my_base.sdc` created in `designs/picorv32a/src` directory
+2. `my_base.sdc` created in `designs/picorv32a/src` directory by referring to openlane/scripts/base.sdc
+
+Commands to run OpenSTA
+```bash
+# Change directory to openlane
+cd Desktop/work/tools/openlane_working_dir/openlane
+
+# Command to invoke OpenSTA tool with script
+sta pre_sta.conf
+```
 
 Open STA results:
 
